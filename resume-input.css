@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    /* margin: 20px; */
+    
 }
 
 .head{
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 form {
@@ -224,30 +224,6 @@ input:focus {
     flex-wrap: wrap;
 }
 
-main .button {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-main .button button{
-    padding: 10px;
-    width: 100%; 
-    
-    font-size: 15px;
-    border: 2px solid #f49a1d;
-    /* border: none; */
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    cursor: pointer;
-    background: white;
-}
-
 
 
 @media only screen and (max-width:700px) {
@@ -280,9 +256,6 @@ main .button button{
     .center .side2 .education .higher-education, .institute , .complition{
         line-height: 9px;
     }
-    main .button {
-        width: 70%;
-    }
     
     
 }
@@ -292,9 +265,6 @@ main .button button{
     .resume-cont .center{
         width: 90%;
         /* font-size: 2vw; */
-    }
-    main .button {
-        width: 90%;
     }
     
 }
