@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* header  */
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo{
+    font-size: 1.6vw;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    color:rgb(6, 6, 5);
+    text-transform: uppercase;    
+}
+
+header .logo h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.line .l{
+    width: 50%;
+    height: 0.5px;
+    background: #cbcaca;
+} 
+
+/* hero  */
+
+.hero{
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .side2 img{
+    width: 40vw;
+    
+}
+.hero .side1 h1 {
+    font-size: 5vw;
+}
+.hero .side1 p{
+    font-size: 1.8vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(61, 58, 58);
+    letter-spacing: -1px;
+}
+.hero .side1 .btn button{
+    width: 250px;
+    padding: 18px;
+    font-size: 20px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hero .side1 .btn button > a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width:950px) {
+    header .logo h2{
+        font-size: 4vw;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero .side1{
+        text-align: center;
+    }
+    .hero .side1 h1{
+        font-size: 7vw;
+        margin-top: 30px;
+        
+    }
+    .hero .side1 p{
+        font-size: 2.6vw;
+    }
+    .hero .side2 img{
+        width: 65vw;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    header .logo h2{
+        font-size: 20px;
+    }
+    .hero .side1{
+        text-align:start;
+    }
+    .hero{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .hero .side1 h1{
+        font-size: 37px;
+    }
+    .hero .side1 p{
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .hero .side1 .btn button{
+        width: 100%;
+    }
+    .hero .side2 img {
+        width: 90vw;
+    }
+}

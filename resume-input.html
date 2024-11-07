@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="resume-input.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="container">
+
+            <!-- header  -->
+
+            <div class="head">
+                <header>
+                    <div class="logo">
+                        <h2><a href="index.html">Resume Builder</a></h2>
+                    </div>
+                </header>
+                <div class="line">
+                    <div class="l"></div>
+                </div>
+            </div>
+
+            <!-- form  -->
+
+            <div id="resume-builder">
+                <form id="inputfield" action="#" method="POST">
+                    <!-- Personal Information -->
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="name" placeholder="Whats your Occupation" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <label for="email-2">Alternate E-mail</label>
+                    <input type="email" id="email-2" name="email" placeholder="Enter your email address" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address">
+
+                    <label for="summery">Summery</label>
+                    <textarea id="summery" name="experience" rows="5"
+                        placeholder="Enter your Professional Summery"></textarea>
+
+                    <!-- Education Information -->
+                    <label for="education">Highest Qualification</label>
+                    <input type="text" id="education" name="education" placeholder="Enter your highest qualification"
+                        required>
+
+                    <label for="institute">College/University</label>
+                    <input type="text" id="institute" name="institute" placeholder="Enter your institute/university"
+                        required>
+
+                    <label for="edu-complete-year">Year of Complition</label>
+                    <input type="date" id="edu-complete-year" name="edu-complete-year" required>
+
+                    <!-- Work Experience -->
+                    <label for="experience">Work Experience</label>
+                    <textarea id="experience" name="experience" rows="5"
+                        placeholder="Enter your work experience"></textarea>
+
+                    <label for="company">Company Name (where you worked):</label>
+                    <input type="text" id="company" name="company"
+                        placeholder="Enter the name of the company where you worked" required>
+
+                    <label for="role">Your Role/Job Title:</label>
+                    <input type="text" id="role" name="role"
+                        placeholder="e.g., Software Engineer, Project Manager, Data Analyst" required>
+
+                    <label for="duration">Duration of Employment (From - To):</label>
+                    <input type="text" id="from" name="from" placeholder="From (YYYY-MM)" required>
+                    <input type="text" id="to" name="to" placeholder="To (YYYY-MM)" required>
+
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills"
+                        placeholder="List your skills (e.g., HTML, CSS, JavaScript)" required>
+
+                    <label for="interest">Interest</label>
+                    <textarea id="interest" name="interest" rows="5"
+                        placeholder="List your hobbies and areas of interest"></textarea>
+
+                    <input id="btn" type="submit" value="Generate Resume">
+                </form>
+
+            </div>
+        </div>
+
+        <div id="output"></div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
